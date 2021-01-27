@@ -150,12 +150,6 @@
     .line 110
     .end local v0    # "i":I
     :cond_0
-    invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getPreferredNetworkSwitcher()Lcom/motorola/android/internal/telephony/msim/PreferredNetworkSwitcher;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/motorola/android/internal/telephony/MotoExtTelephonyServiceBase;->mPreferredNetSw:Lcom/motorola/android/internal/telephony/msim/PreferredNetworkSwitcher;
-
     .line 111
     invoke-static {}, Lcom/android/internal/telephony/CallManager;->getInstance()Lcom/android/internal/telephony/CallManager;
 
