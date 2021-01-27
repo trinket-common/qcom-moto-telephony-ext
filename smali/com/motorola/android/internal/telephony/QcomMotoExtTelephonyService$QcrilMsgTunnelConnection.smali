@@ -171,15 +171,6 @@
 
     iput-boolean v1, v0, Lcom/motorola/android/internal/telephony/QcomMotoExtTelephonyService;->mServiceReady:Z
 
-    .line 3182
-    invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/internal/telephony/GsmCdmaPhone;
-
-    invoke-virtual {v0}, Lcom/android/internal/telephony/GsmCdmaPhone;->onMotoExtServiceReady()V
-
     .line 3184
     :goto_2
     return-void
