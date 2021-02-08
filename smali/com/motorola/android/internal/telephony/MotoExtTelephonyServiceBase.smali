@@ -913,27 +913,6 @@
     .locals 2
     .param p1, "phoneId"    # I
 
-    .line 1965
-    invoke-virtual {p0}, Lcom/motorola/android/internal/telephony/MotoExtTelephonyServiceBase;->enforceModifyPermission()V
-
-    .line 1966
-    invoke-static {p1}, Lcom/android/internal/telephony/PhoneFactory;->getPhone(I)Lcom/android/internal/telephony/Phone;
-
-    move-result-object v0
-
-    .line 1967
-    .local v0, "phone":Lcom/android/internal/telephony/Phone;
-    if-eqz v0, :cond_0
-
-    .line 1968
-    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getAndResetInTestEmergencyCall()Z
-
-    move-result v1
-
-    return v1
-
-    .line 1970
-    :cond_0
     const/4 v1, 0x0
 
     return v1
